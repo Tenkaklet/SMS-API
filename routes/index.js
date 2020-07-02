@@ -16,6 +16,7 @@ router.get('/:number/:horoscope/:name', function(req, res, next) {
   .then(function (message) {
     res.json({msg: 'Meddelande har skickats'});
   });
+  next();
 });
 
 module.exports = router;
